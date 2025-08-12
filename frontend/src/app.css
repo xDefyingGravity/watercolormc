@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300..700&display=swap');
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+:not(.prose) html,
+:not(.prose) body {
+	overscroll-behavior: none;
+}
+
+:not(.prose) .nunito-normal,
+:not(.prose) body,
+:not(.prose) html {
+	font-family: 'Nunito', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+}
+
+:not(.prose) .nunito-bold {
+	font-family: 'Nunito', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+}
+
+:not(.prose) .material-symbols-outlined {
+	font-variation-settings:
+		'FILL' 0,
+		'wght' 400,
+		'GRAD' 0,
+		'opsz' 24;
+	font-family: 'Material Symbols Outlined', serif;
+}
+
+:not(.prose) h1,
+:not(.prose) h2,
+:not(.prose) h3,
+:not(.prose) h4,
+:not(.prose) h5,
+:not(.prose) h6,
+:not(.prose) img,
+:not(.prose) button,
+:not(.prose) div {
+	font-optical-sizing: auto;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	-webkit-tap-highlight-color: transparent;
+
+	-webkit-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+
+	user-select: none;
+
+	-webkit-touch-callout: none;
+
+	-webkit-overflow-scrolling: touch;
+}
+
+button:focus {
+	outline: none !important;
+	box-shadow: none !important;
+}
+
+.selectable {
+	-webkit-user-select: text !important;
+	-moz-user-select: text !important;
+	-ms-user-select: text !important;
+	user-select: text !important;
+}
+
+.syntax__timestamp {
+	color: #a0aec0;
+}
+
+.syntax_ERROR {
+	color: #dc2626; /* red-600 */
+	font-weight: 600;
+}
+
+.syntax_WARN {
+	color: #facc15; /* yellow-400 */
+	font-weight: 600;
+}
+
+.syntax_INFO {
+	color: #3b82f6; /* blue-500 */
+	font-weight: 600;
+}
+
+.syntax_DEBUG {
+	color: #a855f7; /* purple-500 */
+	font-weight: 600;
+}
+
+.syntax_TRACE {
+	color: #ec4899; /* pink-500 */
+	font-weight: 600;
+}
+
+.syntax__thread {
+	color: #a0aec0; /* gray-400 */
+	font-weight: 600;
+}
+
+.shepherd-element {
+	opacity: 0;
+	transform: translateY(10px);
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.shepherd-element.shepherd-open {
+	opacity: 1;
+	transform: translateY(0);
+}
